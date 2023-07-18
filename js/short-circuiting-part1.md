@@ -1,24 +1,26 @@
 # JS Short Circuiting to Shorten your Code - Part 1 (Logical OR)
-There are 2 ways to use short-circuiting in JS, using the `||` (logical OR) or using the `&&` (logical &&).
+In JavaScript, we can utilize short-circuiting using `||` (logical OR) or the `&&` (logical AND) operators. 
+This article focuses on the logical OR (`||`) operator and provides an example of how to use it to simplify code.
 
 ## Logical OR `||`
-The following example is similar to a use case I used in a code challenge recently.  Let's declare two objects, `person1` and `person2`:
+Let's consider two objects, `person1` and `person2`:
 ```js
 // person1 has an age property
 let person1 = {
-  name: 'michael',
-  lastName: 'smith',
+  name: 'Michael',
+  lastName: 'Smith',
   age: 30
 }
 
 // person2 does not have an age property
 let person2 = {
-  name: 'bob',
-  lastName: 'wilson'
+  name: 'Bob',
+  lastName: 'Wilson'
 }
 ```
-We may receive `person1` or `person2` as arguments to a function and not know which one has the property `age` defined.
-If we have to do some arithmetics on `age` we need a number, but `person2.age` will return `undefined`, so here is a way to assign a default number to any object that lacks the `age` property:
+### Use Case:
+We might receive either `person1` or `person2` as arguments to a function and not know if the `age` property is defined for each object.
+If we need to perform calculations or operations involving `age`, we require a valid number.  However, `person2.age` would return `undefined` in this case, so we need a way to assign a default value to any object that lacks the `age` property:
 ```js
 // short-circuiting with || to provide default values for age
 let age1 = person1.age || 0
@@ -30,6 +32,19 @@ console.log(`age1: ${age1}, age2: ${age2})
 console.log(`person2.age is not defined: ${person2.age}`)
 // OUTPUT: person2.age is not defined: undefined
 ```
-We can replace any `undefined` age property with the number `0`.
+### Explanation:
+By using the logical OR (`||`) operator, we can effectively handle default values for the `age` property in each person object.
+If `person1.age` is defined and truthy (not falsy), the variable `age1` will be assigned its value.
+If `person1.age` is undefined or falsy (e.g., null, 0, an empty string), the `||` operator short-circuits and assigns the default value 0 to 'age1'.
+Similarly, if `person2.age` is not defined (`undefined`) or falsy, the `||` operator short-circuits and assignes the default value 0 to `age2`.
+
+### Alternatives:
+Instead of using the logical OR (`||`) operator, you could achieve the same result using the ternary operator (conditional operator):
+```js
+// the ternary operator allows you to explicitly check if the `age` property is defined for each person object,
+// and if it is, use its value; otherwise, use the default value 0.
+let age1 = person1.age !== undefined ? person1.age : 0
+let age2 = person2.age !== undefined ? person2.age : 0
+```
 
 ## How It Works
