@@ -3,6 +3,60 @@ In JavaScript, we can utilize short-circuiting using `||` (logical OR) or the `&
 This article focuses on the logical OR (`||`) operator and provides an example of how to use it to simplify code.
 
 ## Logical OR `||`
+
+### Examples
+Try to guess and/or test them yourself
+```js
+true || false    // OUTPUT: true (1st value evaluated)
+false || true    // OUTPUT: true (2nd value evaluated)
+false || false   // OUTPUT: false (2nd value evaluated)
+
+// other variants of the above
+3.14 || 0        // OUTPUT: 3.14 (1st value evaluated)
+0 || 3.14        // OUTPUT: 3.14 (2nd value evaluated)
+0 || 0           // OUTPUT: 0 (2nd value evaluated)
+
+// more variants
+"zero" || 0         // OUTPUT: "zero" (1st value (it's truthy))
+"" || 0.5           // OUTPUT: 0.5 (2nd value)
+NaN || undefined    // OUTPUT: undefined (2nd value)
+
+// one more
+3 > 1 || "hello"    // OUTPUT: true (1st value evaluates to true)
+```
+
+### Logic
+
+
+### Falsy values
+```js
+false
+0
+null
+NaN
+undefined
+"" // empty string without space
+```
+Everything that is not `falsy` is `truthy`, for example:
+```js
+// truthy 
+" " 
+[]
+{}
+3.14
+"hello"
+true
+
+// using !! we can check their boolean value
+console.log(!!" ")      // true
+console.log(!![])       // true
+console.log(!!{})       // true
+console.log(!!3.14)     // true
+console.log(!!"hello")  // true
+console.log(!!true)     // true
+```
+
+### Example with objects
 Let's consider two objects, `person1` and `person2`:
 ```js
 // person1 has an age property
