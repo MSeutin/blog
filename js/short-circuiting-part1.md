@@ -100,5 +100,3 @@ Instead of using the logical OR (`||`) operator, you could achieve the same resu
 let age1 = person1.age !== undefined ? person1.age : 0
 let age2 = person2.age !== undefined ? person2.age : 0
 ```
-
-## How It Works
