@@ -34,9 +34,9 @@ console.log(`person2.age is not defined: ${person2.age}`)
 ```
 ### Explanation:
 By using the logical OR (`||`) operator, we can effectively handle default values for the `age` property in each person object.
-If `person1.age` is defined and truthy (not falsy), the variable `age1` will be assigned its value.
+If `person1.age` is defined as truthy (not falsy), the variable `age1` will be assigned its value.
 If `person1.age` is undefined or falsy (e.g., null, 0, an empty string), the `||` operator short-circuits and assigns the default value 0 to 'age1'.
-Similarly, if `person2.age` is not defined (`undefined`) or falsy, the `||` operator short-circuits and assignes the default value 0 to `age2`.
+Similarly, if `person2.age` is not defined (`undefined`) or falsy, the `||` operator short-circuits and assigns the default value 0 to `age2`.
 
 ### Alternatives:
 Instead of using the logical OR (`||`) operator, you could achieve the same result using the ternary operator (conditional operator):
