@@ -1,3 +1,5 @@
+![header image](../images/short.jpeg)
+
 # JS Short Circuiting to Shorten your Code - Part 1 (Logical OR)
 In JavaScript, we can utilize short-circuiting using `||` (logical OR) or the `&&` (logical AND) operators. 
 This article focuses on the logical OR (`||`) operator and provides an example of how to use it to simplify code.
