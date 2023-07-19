@@ -28,7 +28,7 @@ NaN || undefined    // OUTPUT: undefined (2nd value)
 ### Logic
 The boolean OR `||` returns true or false when included in a boolean expression. The evaluation proceeds from left to right, and as soon as a definitive answer is obtained, the result is returned. The boolean OR is true if either the left operand or the right operand is true, or both are true. It will only return false when both operands are false. When the left operand evaluates to true, there is no need to continue the evaluation as the operation is short-circuited, and the return value will be true. Conversely, if the left operand is false, the right operand must be evaluated to determine the final result (true or false).
 
-Importantly, short-circuiting not only returns the boolean value but also the value of the evaluated operand. For example, when using ||, if the left operand is a truthy value, the result will be the value of the left operand; otherwise, the result will be the value of the right operand. Understanding this behavior can be helpful in designing concise and efficient code.
+Importantly, short-circuiting not only returns the boolean value but also the value of the evaluated operand. For example, when using `||`, if the left operand is a truthy value, the result will be the value of the left operand; otherwise, the result will be the value of the right operand. Understanding this behavior can be helpful in designing concise and efficient code.
 
 ### Falsy values
 ```js
