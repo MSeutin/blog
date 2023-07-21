@@ -13,7 +13,7 @@ I have faced moments of doubt throughout my life. At 12 I thought I was too old 
 At 26, I discovered Brazilian Jiu-Jitsu and fell in love with it. Age became irrelevant, and I trained with mostly younger peers, which kept me young in spirit. At 31, I earned a nursing license and worked in a psych ward for a decade.
 
 ## Ups and Downs
-
+![ups and downs](../images/upsdowns.jpeg)
 At 47, I decided I was done with feeling uneducated. I wanted to be a software engineer. Instead of taking shortcuts, I embarked on a long road toward a Bachelor's degree in Computer Science, even though I didn't have high school-level math skills.
 
 ## Epiphany
