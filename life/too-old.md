@@ -1,3 +1,5 @@
+![header image](../images/hourglass.jpeg)
+
 The short answer is no.
 
 ## Mindset
