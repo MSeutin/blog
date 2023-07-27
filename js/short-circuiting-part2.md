@@ -1,3 +1,4 @@
+![header image](../images/and.jpeg)
 
 ## Part 2 (logical AND)
 
